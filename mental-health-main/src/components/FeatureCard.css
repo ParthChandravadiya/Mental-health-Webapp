@@ -1,0 +1,48 @@
+.fet-card{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fet-card-left{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fet-card-left img{
+    width: 75%;
+}
+.fet-card-right{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7%;
+}
+.fet-card h3{
+    margin:0;
+    padding: 0;
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 20px;
+    color: #15201C;
+    text-align: start;
+    width: 80%;
+}
+.fet-card p{
+    margin:0;
+    padding: 0;
+    font-family: nunito;
+    font-weight: 400;
+    font-size: 16px;
+    color: #433F37;
+    text-align: start;
+    width: 80%;
+    height: 60%;
+}
