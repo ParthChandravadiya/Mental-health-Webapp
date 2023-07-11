@@ -6,6 +6,8 @@ import Home from "./Home";
 import Counsellors from "./Counsellors";
 import Signin from "./Signin";
 import Signup from "./Signup";
+import UserDashNav from "./UserDashBoard/UserDashNav";
+import UserHome from "./UserDashBoard/UserHome";
 
 export {
     Aboutus,
@@ -15,5 +17,7 @@ export {
     Home,
     Counsellors,
     Signin,
-    Signup
+    Signup,
+    UserDashNav,
+    UserHome,
 }

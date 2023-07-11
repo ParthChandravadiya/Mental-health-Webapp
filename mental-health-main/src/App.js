@@ -11,49 +11,64 @@ import {
   Home,
   Counsellors,
   Signin,
-  Signup
+  Signup,
+  UserDashNav,
+  UserHome,
 } from "./pages";
 
 function App() {
   return (
     <>
-    <Navbar />
-    
       <Routes>
         <Route
           path="/"
           element={
               <Home />
           }
-        ></Route>
-        <Route path="/counsellors" element={<Counsellors/>}></Route>
+        />
+        <Route
+          path="/counsellors"
+          element={
+            <GuestRoute>
+              <Counsellors />
+            </GuestRoute>
+          }
+        />
         <Route
           path="/aboutus"
           element={
+            <GuestRoute>
               <Aboutus />
+            </GuestRoute>
           }
-        ></Route>
-        <Route path="/plans" element={<Plans />}></Route>
+        />
+        <Route path="/plans" element={<Plans />} />
         <Route
           path="/career"
           element={
+            <GuestRoute>
               <Career />
+            </GuestRoute>
           }
-        ></Route>
+        />
         <Route
           path="/contactus"
           element={
+            <GuestRoute>
               <Contactus />
+            </GuestRoute>
           }
-        ></Route>
+        />
         {/* <Route path="/allcoaches1" element={<AllCoaches1 />}></Route>
-        <Route path="/allcoaches2" element={<AllCoaches2 />}></Route>
+        <Route path="/allcoaches2" element={<AllCoaches2 />}></Route> */}
         <Route
           path="/userhome"
           element={
+            // <PrivateRoute>
               <UserHome />
+            // </PrivateRoute>
           }
-        /> */}
+        />
         {/* <Route
           path="/usercommunity"
           element={
@@ -63,15 +78,19 @@ function App() {
         <Route
           path="/signin"
           element={
+            <GuestRoute>
               <Signin />
+            </GuestRoute>
           }
-        ></Route>
+        />
         <Route
           path="/signup"
           element={
+            <GuestRoute>
               <Signup />
+            </GuestRoute>
           }
-        ></Route>
+        />
         {/* <Route
           path="/posts/all"
           element={
@@ -85,10 +104,10 @@ function App() {
           }
         ></Route> */}
       </Routes>
-      <Footer />
     </>
   );
-};
+}
+
 const GuestRoute = ({ children, ...rest }) => {
   const { authData } = useSelector((state) => state.auth);
   return authData ? (
@@ -96,7 +115,7 @@ const GuestRoute = ({ children, ...rest }) => {
   ) : (
     <>
       <Navbar />
-    {children}
+      {children}
       <Footer />
     </>
   );
@@ -106,8 +125,8 @@ const PrivateRoute = ({ children, ...rest }) => {
   const { authData } = useSelector((state) => state.auth);
   return authData ? (
     <>
-      {/* <UserDashNav />
-    {children} */}
+      <UserDashNav />
+      {children}
     </>
   ) : (
     <Navigate to="/signin" state={{ from: rest.location }} />
@@ -115,4 +134,3 @@ const PrivateRoute = ({ children, ...rest }) => {
 };
 
 export default App;
-
