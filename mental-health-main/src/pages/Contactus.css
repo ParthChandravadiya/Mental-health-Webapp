@@ -1,0 +1,125 @@
+.contact-main{
+    background-color: #FFFFFF;
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 8%;
+}
+.contact-top{
+    padding: 0;
+    margin: 0;
+    width: 60%;
+}
+.contact-txt1{
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 28px;
+    color: #15201C;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.contact-txt2{
+    font-family: nunito;
+    font-weight: 600;
+    font-size: 20px;
+    color: #4A5652;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.contact-mid{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-mid-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-mid-left img{
+    width: 75%;
+}
+.contact-mid-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
+}
+.contact-mid-right div{
+    font-family: nunito;
+    font-weight: 600;
+    font-size: 18px;
+    color: #4A5652;
+    text-align: left;
+}
+.contact-mid-right input{
+    width: 55%;
+    height: 7%;
+    border: solid 1px #C2C2C2;
+    border-radius: 5px;
+    padding-left: 2%;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+}
+.contact-mid-right input::placeholder{
+    font-family: nunito;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A7A7A7;
+}
+.book-now{
+    width: 30%;
+    height: 10%;
+    background-color: #1F483B;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 2%;
+
+    color: white;
+    font-family: nunito;
+    font-size: 16px;
+    font-weight: 600;
+}
+#discussion{
+    height: 15%;
+}
+.contact-social{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    margin-top: 3%;
+}
+.contact-social div{
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-social div img{
+    width: 40%;    
+}
+.contact-social p{
+    font-family: nunito;
+    font-size: 18px;
+    font-weight: 600;
+    color: #15201C;
+}
+.h2{
+    color: #4A5652;
+}

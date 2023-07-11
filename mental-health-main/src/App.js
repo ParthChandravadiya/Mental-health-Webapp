@@ -2,6 +2,7 @@ import "./App.css";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Navbar } from "./components";
+import { Footer } from "./components";
 import {
   Aboutus,
   Career,
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
     <Navbar />
+    
       <Routes>
         <Route
           path="/"
@@ -83,8 +85,34 @@ function App() {
           }
         ></Route> */}
       </Routes>
+      <Footer />
+    </>
+  );
+};
+const GuestRoute = ({ children, ...rest }) => {
+  const { authData } = useSelector((state) => state.auth);
+  return authData ? (
+    <Navigate to="/userhome" state={{ from: rest.location }} />
+  ) : (
+    <>
+      <Navbar />
+    {children}
+      <Footer />
     </>
   );
 };
 
+const PrivateRoute = ({ children, ...rest }) => {
+  const { authData } = useSelector((state) => state.auth);
+  return authData ? (
+    <>
+      {/* <UserDashNav />
+    {children} */}
+    </>
+  ) : (
+    <Navigate to="/signin" state={{ from: rest.location }} />
+  );
+};
+
 export default App;
+

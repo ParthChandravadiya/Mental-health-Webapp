@@ -1,0 +1,109 @@
+
+.download-main{
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.download-left{
+    height: 70%;
+    width: 30%;
+}
+.download-left img{
+    height: 100%;
+}
+.download-right{
+    height: 70%;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.download-right-text{
+    width: 100%;
+}
+.download-text1{
+    font-family: Nunito;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #15201C;
+    line-height: 150%;
+    width: 100%;
+    margin-bottom: 3%;
+}
+.download-text1 span{
+    color: #378B6C;
+}
+
+.download-text2{
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #433F37;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.download-data{
+    width: 90%;
+    height: 45%;
+    display: grid;
+    grid-template-columns: 38% 38%;
+    grid-template-rows: 36% 36%;
+    column-gap: 10%;
+    row-gap: 14%;
+}
+.download-data div{
+    border-bottom: solid 1px #9BB1A6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5%;
+}
+.download-data div h2{
+    margin: 0;
+    color: #1F483B;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 24px;
+}
+.download-data div p{
+    margin: 0;
+    color: #433F37;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.down-play{
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    width: 38%;
+    border-radius: 0px;
+    border: 0;
+    margin-right: 4%;
+    background-color: white;
+}
+.down-play img{
+    width: 100%;
+}
+.down-apple{
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    width: 38%;
+    border-radius: 0px;
+    border: 0;
+    background-color: white;
+}
+.down-apple img{
+    width: 100%;
+}

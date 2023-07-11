@@ -1,0 +1,136 @@
+.counsellors-main{
+    background-color: white;
+    height: 150vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 6%;
+    gap: 2%;
+}
+.counsellors-top{
+    height: 10%;
+    width: 82%;
+    background-color: #EFF3EF;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cou-top-left{
+    width: 70%;
+}
+.counsellors-top h3{
+    color: #15201C;
+    margin: 0%;
+    padding: 0%;
+    padding-bottom: 1%;
+    font-size: 20px;
+}
+.counsellors-top p{
+    color: #4A5652;
+    margin: 0;
+    padding: 0;
+}
+.counsellors-top button{
+    margin-left: 3%;
+    display: inline-flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 5px;
+    background: #1F483B;
+
+    color: #FFF;
+    font-size: 16px;
+    font-family: Nunito;
+    font-weight: 600;
+    line-height: normal;
+}
+.counsellors-filters{
+    height: 10%;
+    width: 82%;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 2px #E4E8E6;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    
+}
+.each-filter{
+    background-color: #EFF3EF;
+    padding: 0.8% 1.5%;
+    border-radius: 5px;
+
+    border: none;
+    color: #4A5652;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+}
+.selected-filter{
+    background-color: #dae6da;
+    padding: 0.8% 1.5%;
+    border-radius: 5px;
+
+    border: solid 2px #378B6C;
+    color: #378B6C;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+}
+.counsellors-filters select{
+    background-color: #e3e9e3;
+    height: 37%;
+    padding-left: 1%;
+    border-radius: 5px;
+    appearance:none; 
+    border: solid 2px #b6bdb6;
+    color: #4A5652;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+}
+.counsellors-bottom{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8%;
+}
+.counsellors-all{
+    height: 64%;
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 2%;
+}
+.Load-more{
+    display: flex;
+    width: 16%;
+    padding: 12px 28px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    border: 2px solid #1F483B;
+    background: #FFF;
+
+    color: #1F483B;
+    font-size: 16px;
+    font-family: Nunito;
+    font-weight: 700;
+}

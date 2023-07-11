@@ -1,0 +1,261 @@
+.Coach-card{
+    width: 19%;
+    height: 86%;
+    background-color: #EFF3EF;
+    
+
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 20px 0px #0000001A; */
+    padding-top: 2%;
+    padding-bottom: 1%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Coach-card img{
+    height: 50%;
+    border-radius: 50%;
+    margin-bottom: 7%;
+}
+.coach-name{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1F1704;
+    padding-bottom: 2%;
+}
+.coach-star{
+    height: 10%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin-bottom: 5%;
+}
+.coach-star img{
+    height: 60%;
+}
+.coach-star div{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #433F37;
+}
+.coches-trained{
+    font-size: 14px;
+    height: 20%;
+    width: 90%;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #433F37;
+}
+.coach-buttons{
+    width: 80%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+}
+.message-btn{
+    background-color: #1F483B;
+    border: 0;
+    border-radius: 8px;
+
+    height: 100%;
+    aspect-ratio: 1;
+
+    padding-top: 3%;
+}
+.message-btn img{
+    width: 70%;
+    height: 70%;
+}
+.view-coach-btn{
+    border: 0;
+    border-radius: 8px;
+    height: 100%;
+    width: 60%;
+
+    color: #1F483B;
+    border: solid 2px #1F483B;
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+
+/* popup */
+
+.Coach-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Popup-content {
+    height: 65%;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5%;
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+  }
+  .Popup-top{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5%;
+  }
+  .Popup-top-left{
+    width: max-content;
+    height: 100%;
+  }
+  .Popup-top-left img{
+    height: 100%;
+    border-radius: 10px;
+  }
+  .Popup-top-right{
+    height: 100%;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5%;
+  }
+  .P-coach-star{
+    height: 15%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
+    
+}
+.P-coach-star img{
+    height: 100%;
+}
+.P-coach-star div{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    color: #4A5652;
+}
+.P-coach-name{
+    font-size: 22px;
+    font-weight: 600;
+    color: #15201C;
+}
+.P-coches-trained{
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4A5652;
+}
+.Skills{
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5%;
+    height: 26%;
+    width: 100%;
+}
+.Skill-box{
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+    
+
+    width: max-content;
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    background: #EFF3EF;
+    border-bottom: 2px solid #C6D0C6;
+    border-radius: 10px;
+
+    font-size: 14px;
+}
+.Skill-box img{
+    height: 50%;
+}
+.Popup-bottom{
+    width: 100%;
+    height: 65%;
+    
+}
+.Popup-bottom ul{
+    width: 90%;
+    height: 75%;
+}
+.Popup-bottom button{
+    display: inline-flex;
+    padding: 12px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 5px;
+    background: #1F483B;
+
+    color: #FFF;
+    font-size: 16px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+}
+.Popup-bottom li{
+    font-size: 16px;
+    color: #433F37;
+    padding: 1%;
+
+}
+.close-btn{
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: white;
+    border: none;
+}
+.close-btn img{
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+
+  
+
+  
+  
