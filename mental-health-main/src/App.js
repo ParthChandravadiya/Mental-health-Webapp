@@ -14,18 +14,16 @@ import {
   Signup,
   UserDashNav,
   UserHome,
+  Blogs,
+  Support,
+  Profile,
 } from "./pages";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route
-          path="/"
-          element={
-              <Home />
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route
           path="/counsellors"
           element={
@@ -65,7 +63,7 @@ function App() {
           path="/userhome"
           element={
             // <PrivateRoute>
-              <UserHome />
+            <UserHome />
             // </PrivateRoute>
           }
         />
@@ -91,6 +89,11 @@ function App() {
             </GuestRoute>
           }
         />
+        <Route path="/counsellor" element={<Counsellors />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/profile" element={<Profile />} />
+
         {/* <Route
           path="/posts/all"
           element={

@@ -8,6 +8,9 @@ import Signin from "./Signin";
 import Signup from "./Signup";
 import UserDashNav from "./UserDashBoard/UserDashNav";
 import UserHome from "./UserDashBoard/UserHome";
+import Blogs from "./UserDashBoard/Blogs";
+import Support from "./UserDashBoard/Support";
+import Profile from "./UserDashBoard/Profile";
 
 export {
     Aboutus,
@@ -20,4 +23,7 @@ export {
     Signup,
     UserDashNav,
     UserHome,
+    Blogs,
+    Support,
+    Profile,
 }
