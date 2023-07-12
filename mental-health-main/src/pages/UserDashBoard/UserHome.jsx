@@ -21,6 +21,22 @@ const UserHome = () => {
           </div>
           <p>Lorem ipsum dolor sit amet. Qui consequatur eveniet et dolor mollitia aut internos totam ut </p>
         </div>
+        <div className='Userhome-cta'>
+          <div className='Userhome-cta-top'>
+            <img src={Plans} alt="" />
+            <h3>Plans</h3>
+            <img src={Next} alt="" />
+          </div>
+          <p>Lorem ipsum dolor sit amet. Qui consequatur eveniet et dolor mollitia aut internos totam ut </p>
+        </div>
+        <div className='Userhome-cta'>
+          <div className='Userhome-cta-top'>
+            <img src={Support} alt="" />
+            <h3>Support</h3>
+            <img src={Next} alt="" />
+          </div>
+          <p>Lorem ipsum dolor sit amet. Qui consequatur eveniet et dolor mollitia aut internos totam ut </p>
+        </div>
       </div>
     </div>
     </>
