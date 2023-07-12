@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./UserDashNav.css";
 import MentalLogo from "../../assets/MentalLogo.svg";
+import User from "../../assets/User.svg";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
@@ -19,35 +20,42 @@ const UserDashNav = () => {
     <div className="navbar">
       <nav className="nav">
         <div className="left_nav">
-          <a href="/">
+          <ul>
+            <li>
+            <a href="/">
             <img src={MentalLogo} alt="logo" />
-          </a>
+            </a>
+            </li>
+            <li>
+              <NavLink
+                to="/counsellors"
+                className="nav-link"
+                activeClassName="active"
+              >
+                Counsellors
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/blogs" className="nav-link" activeClassName="active">
+                Blogs
+              </NavLink>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <NavLink
-              to="/counsellors"
-              className="nav-link"
-              activeClassName="active"
-            >
-              Counsellors
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/blogs" className="nav-link" activeClassName="active">
-              Blogs
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
+        <div className="right_nav">
+      
+          <h3>Welcome <span> Neeraj!</span></h3>
+          
+            <img src={User} alt="" />
+            {/* <NavLink
               className="nav-link"
               activeClassName="active"
               onClick={logout}
             >
               Logout
-            </NavLink>
-          </li>
-        </ul>
+            </NavLink> */}
+        </div>
+        
       </nav>
       <hr className="line" />
     </div>

@@ -12,11 +12,28 @@
   .nav{
       color: #4A5652;
       display: flex;
-      justify-content: space-between;
-      width: 90%;
+      justify-content: center;
+      width: 96%;
       align-items: center;
     }
-  
+  .left_nav{
+    width: 50%;
+    /* display: flex;
+    justify-content: flex-start; */
+  }
+  .right_nav{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4%;
+  }
+  .right_nav h3{
+    font-weight: 600;
+  }
+  .right_nav span{
+    color: #0F2B34;
+    font-weight: 700;
+  }
   .nav ul{
       padding: 0;
       margin: 0;
@@ -25,9 +42,9 @@
       font-weight: 600;
       font-size: 18px;
       color: #4A5652;
-      width:55%;
-      justify-content: flex-end;
-      gap: 7%;
+      width:80%;
+      justify-content: flex-start;
+      gap: 8%;
   }
   
   /* .nav ul li{
